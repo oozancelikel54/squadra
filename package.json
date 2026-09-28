@@ -1,0 +1,36 @@
+{
+  "name": "squadra",
+  "description": "Halı saha kadro, forma ve saha yerleşim uygulaması",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild:android": "expo prebuild --platform android --clean",
+    "export:apk": "node scripts/export-android.js apk",
+    "export:aab": "node scripts/export-android.js aab",
+    "keystore:create": "node scripts/create-upload-keystore.js",
+    "build:apk": "eas build -p android --profile apk --wait",
+    "build:aab": "eas build -p android --profile aab --wait"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~54.0.35",
+    "expo-blur": "~15.0.8",
+    "expo-build-properties": "~1.0.10",
+    "expo-file-system": "~19.0.23",
+    "expo-media-library": "~18.2.1",
+    "expo-sharing": "~14.0.8",
+    "expo-status-bar": "~3.0.9",
+    "expo-system-ui": "~6.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-google-mobile-ads": "16.3.4",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-svg": "15.12.1",
+    "react-native-view-shot": "4.0.3"
+  },
+  "private": true
+}
